@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+<script src="apicalls.js"></script>
+
+<title>augmentation / constellations</title>
+	<link rel="stylesheet" type="text/css" href="thesis.css">
+</head>
+
+<body>
+  <div class="pagecontent">
+    <h1>Experience The Night Watch, Contextualize An Exhibit:<br> How Digital Augmentation Is Transforming Museum Space</h1>
+    <p id="text1">If you were tasked with setting up a museum exhibition of your own, how would you go about it?
+    Would you hang paintings at even distances, mount sculptures onto cubic pedestals, attach small golden plaques to every exhibit
+    – or do something else?</p>
+    <div id="img1" class="frame1">
+      <div class="overlaycontainer">
+        <img src="images/frame1.png" class="innerframe">
+        <img src="images/benjamin2.png" class="overlay">
+        <div class="plaque">benjamin</div>
+      </div>
+    </div>
+    <div id="img2" class="frame2">
+      <div class="overlaycontainer">
+        <img src="images/frame2.png" class="innerframe">
+        <img src="images/eisenstein2.png" class="overlay">
+        <div class="plaque">eisenstein</div>
+      </div>
+    </div>
+    <img src="images/frame3.png" class="frame3" id="img3">
+    <div class="imgcontainer frame2" id="img4">
+      <img src="images/museumspace_screenshot.png" class="innerimg">
+      <img src="images/frame2.png" class="innerframe">
+    </div>
+    <p id="text2">Most of us have the same idea of what a modern museum looks like – just google "museum gallery".
+      These spatial conventions inform the ways in which collections are organized, even if the experience moves from in-person to online mode.</p>
+    <p id="text3">What happens when a museum abandons the notion of spatiality and organizes exhibits based on their meanings and contexts?</p>
+    <img src="images/juxtapose1.jpeg" class="juxtapose" id="img5">
+    <img src="images/juxtapose2.jpeg" class="juxtapose" id="img6">
+    <img src="images/juxtapose3.jpg" class="juxtapose" id="img7">
+    <img src="images/juxtapose4.jpg" class="juxtapose" id="img8">
+
+    <p id="text4">Non-spatial digital architecture allows to think about <span class="italic">transitions</span>
+      between parts of the collection – just like transitions between <span class="bold">two movie frames</span>
+      or <span class="bold">a hyperlink and its content</span>.</p>
+    <p id="text5">One of five types of montage in Soviet Montage Theory, <span class="italic">"intellectual montage"</span> was defined by Eisenstein as
+      "the juxtaposition of images of concrete objects to <span class="bold">construct abstract concepts and notions</span>,
+      preferably through <span class="bold">a conflict of meanings</span>."</p>
+    <p id="text6">To Eisenstein, the development of intellectual thought and intellectual montage are similar,
+      since both participate in "comparative activity".</p>
+    <div class="imgcontainer frame2" id="eisenstein">
+      <img src="images/eisenstein.jpeg" class="innerimg">
+      <img src="images/frame2.1.png" class="innerframe">
+      <img src="images/reel1.png" id="reel">
+      <img src="images/reel3.png" id="reelroll">
+      <script>
+        $('#reelroll').click(function(event) {
+          $(event.target).toggleClass('spin');
+          $('#gif1').toggle('800', function(){});
+        })
+      </script>
+    </div>
+    <div id="gif1">
+      <div class="tenor-gif-embed" data-postid="14683512" data-share-method="host" data-width="100%" data-aspect-ratio="1.3351206434316354">
+        <a href="https://tenor.com/view/battleship-potemkin-sergei-eisenstein-odessa-steps-baby-carriage-20s-gif-14683512">Battleship Potemkin Sergei Eisenstein GIF</a> from <a href="https://tenor.com/search/battleshippotemkin-gifs">Battleshippotemkin GIFs</a>
+      </div><script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+      <p>Example of Eisenstein's montage from "Battleship Potemkin"</p>
+    </div>
+
+    <p id="text7">To Benjamin, two phenomena are juxtaposed if they don't have "connecting matter or continuing thread or common topic"
+      but still share some "inexplicit connection."</p>
+    <div class="imgcontainer frame2" id="benjamin">
+      <img src="images/benjamin1.jpeg" class="innerimg">
+      <img src="images/frame2.2.png" class="innerframe">
+      <button>click to generate random images of a museum gallery to juxtapose them</button>
+    </div>
+    <div id="apipics"></div>
+    <p id="text8">Benjamin calls networks of juxtapositions "constellations."
+      Constellations can be constructed out of different objects (think museum paintings), events, and meanings.</p>
+    <img src="images/constellation1.png" class="juxtapose" id="const1">
+    <img src="images/constellation2.png" class="juxtapose" id="const2">
+    <img src="images/constellation3.png" class="juxtapose" id="const3">
+
+    <p id="text9"><span class="bold">The key question is: how do museums juxtapose and montage a collection to efficiently augment their narrative?</span>
+      <br>I argue that different levels of context- and time-based juxtapositions and montages allows a museum to capitalize on a combination of
+      <span class="italic">intentional</span> and <span class="italic">unintentional</span> augmentation.
+      <br><br><span class="italic">Intentional</span> vs. <span class="italic">unintentional</span> denotes the difference
+      between juxtapositions and montages that are curated and narrativized by a museum, and those that happen outside of its control.
+    </p>
+
+    <div id="overviewvideos">
+      <div id="vid1">
+        <video autoplay muted loop playsinline src="images/rijksoverview.mov">
+    				Your browser does not support the video tag.
+        </video>
+        <a href="https://www.rijksmuseum.nl/en/masterpieces-up-close" target="_blank">"Masterpieces Up Close" by the Rijksmuseum</a>
+      </div>
+      <div id="vid2">
+        <video autoplay muted loop playsinline src="images/bmoverview.mov">
+    				Your browser does not support the video tag.
+        </video>
+        <a href="https://britishmuseum.withgoogle.com/" target="_blank">"Museum of the World" by the British Museum</a>
+      </div>
+    </div>
+
+    <div id="museumspace">
+      <img src="images/museumspace.png">
+      <p id="space1" class="spacelabel" data-l="architectural">&lt; juxtapositions of the collection with the surroundings &gt;</p>
+      <p id="space2" class="spacelabel" data-l="internal">&lt; constellations within one object &gt;</p>
+      <p id="space3" class="spacelabel" data-l="otherobjects">&lt; constellations of multiple objects &gt;</p>
+      <p id="space4" class="spacelabel" data-l="outside">&lt; juxtapositions with the "outside world" &gt;</p>
+    </div>
+
+    <div id="conclusion">
+      <div class="conclfield" id="architectural">
+        <p>In "Masterpieces Up Close," the Rijksmuseum displays the architecture of the Gallery of Honor
+          while intentionally juxtaposing its elements to <span class="italic">The Night Watch</span>.</p>
+        <img src="images/rijksspace1.png">
+        <p>Parts of the space are allowed to appear and disappear on command,
+          demonstrating that the lost "aura" of an in-person visit can be compensated
+          for by uninterrupted access to high-quality visuals.</p>
+        <p>In “The Museum of the World,” the British Museum excludes space-related juxtapositions,
+          not forming the context based on size, positioning, or surroundings of an object.</p>
+      </div>
+
+      <div class="conclfield" id="internal">
+        <p>During the audio guide narration of The Night Watch, a cinematic montage makes unexpected parts of the painting interact,
+          zooming in on certain elements, highlighting some, and drawing shapes around others. The <span class="italic">constellations</span>
+          of small aspects of an artwork we find interesting are formed.</p>
+        <img src="images/composition_nw.png">
+        <img src="images/attentiontodetail.png">
+      </div>
+
+      <div class="conclfield" id="otherobjects">
+        <p>In "The Museum of the World," colorful visual constellations are drawn on-click to connect objects that had similar
+          use and meaning at the time and place of their origin.</p>
+        <img src="images/objectclick_bm.png">
+        <img src="images/connections_bm.png">
+        <p>Both British Museum and Rijksmuseum use comparisons, contrasts, and common themes between elements of an experience to contextualize them.</p>
+      </div>
+
+      <div class="conclfield" id="outside">
+        <p>This approach takes advantage of the digital serendipity of a web browser and a user’s ability to navigate away,
+          juxtaposing an exhibition’s internal narrative with a user’s agenda, personal space, and interests.
+        </p>
+        <p>"Masterpieces Up Close" points to external media such as related history, news, pop-culture, and creations the painting has inspired,
+          encouraging <span class="italic">unintentional augmentation.</span></p>
+        <img src="images/external1.png">
+        <img src="images/external2.png">
+        <p>The entire navigation of "The Museum of the World" is built in such a way that the user has to "stumble" upon an object (rather than intentionally find it)
+        and augment it with the limited available context.</p>
+      </div>
+
+      <script>
+        $('.spacelabel').on('click', function(event) {
+          console.log($(event.target).data('l'))
+          $('.conclfield').each(function() {
+            $(this).css({'display': 'none'});
+            if($(event.target).data('l') == $(this).attr('id')) {
+              console.log($(this).attr('id'));
+              $(this).toggle('800', function(){});
+            }
+          })
+        });
+      </script>
+    </div>
+
+    <div id="finalthoughts">
+      <p>"Masterpieces Up Close" and "The Museum of the World" provide valuable ideas about the democratization of museum spaces
+        through changing relationship with the visitor. When we are in charge of our interactions with an artwork,
+        we take on a more participatory stance, seek out aspects we have personal involvement with,
+        and form conclusions based on the range of provided multimedia.</p>
+      <p><span class="italic">reinvent material for the digital tour format</span></p>
+      <p><span class="italic">contribute to the contextualization of the collections</span></p>
+      <p><span class="italic">embrace the uncertainty of augmentation</span></p>
+      <p><span class="italic">curate the narrative but leave enough space for crucial juxtapositions to happen on their own</span></p>
+      <div id="finalimg">
+        <img src="images/audioguidepositioning.png" id="thenightwatch">
+        <img src="images/constellation3.2.png" id="finalconstellation">
+      </div>
+    </div>
+
+  </div>
+
+  <div class="icons">
+    <p>Click to select a tool:</p>
+    <img src="images/pen.png" id="pen" class="iconimg">
+    <img src="images/frame3.png" id="frame" class="iconimg">
+    <img src="images/statue4.png" id="statue" class="iconimg">
+  </div>
+
+  <script src="gallery.js"></script>
+</body>
+
+</html>

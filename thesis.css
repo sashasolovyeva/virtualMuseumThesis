@@ -1,0 +1,504 @@
+@charset "UTF-8";
+@import url("https://use.typekit.net/eqi4ubf.css");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: neue-haas-unica, sans-serif;
+
+  font-weight: 400;
+
+  font-style: normal;
+
+  background: hsla(191, 60%, 89%, 1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  /* font-family: minerva-modern, sans-serif;
+
+  font-weight: 400;
+
+  font-style: normal; */
+
+  font-family: angie-sans, sans-serif;
+
+  font-weight: 400;
+
+  font-style: normal;
+  padding: 1.5% 0;
+
+}
+
+p {
+  padding: 1.5% 0;
+  max-width: 28%;
+  position: absolute;
+  /* max-width: 90vw; */
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+img {
+  position: absolute;
+  z-index: -1;
+}
+
+.pagecontent {
+  padding: 2% 5%;
+}
+
+.frame1 {
+  width: 22%;
+  height: auto;
+  padding: 2%;
+}
+
+.frame2 {
+  width: 30%;
+  height: auto;
+  padding: 2%;
+}
+
+.frame3 {
+  width: 26%;
+  height: auto;
+  padding: 2%;
+}
+
+.juxtapose {
+  padding: 2% 0;
+  width: 9%;
+}
+
+.imgcontainer {
+  position: absolute;
+  padding: 2% 0;
+}
+
+.overlaycontainer {
+  position: relative;
+}
+
+.innerimg {
+  position: absolute;
+  height: auto;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.innerframe {
+  height: auto;
+  width: 100%;
+  position: static;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 2%;
+  overflow: hidden;
+  width: auto;
+  height: 0;
+  transition: 2.5s ease;
+}
+
+.overlaycontainer:hover .overlay {
+  height: 98%;
+}
+
+.plaque {
+  position: absolute;
+  width: 20%;
+  height: 3%;
+  background-color: rgb(247, 228, 196);
+  bottom: 8%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: .5em;
+  text-align: center;
+}
+
+#img1 {
+  position: absolute;
+  top: 35%;
+}
+
+#img1 .overlay {
+  right: 0;
+}
+
+#img2 {
+  left: 37%;
+  top: 13%;
+  position: absolute;
+}
+
+#img2 .overlay {
+  left: 5%;
+  bottom: 7%;
+}
+
+#img2 .overlaycontainer:hover .overlay {
+  height: 93%;
+}
+
+#img2 .plaque {
+  bottom: 10%;
+}
+
+#img3 {
+  left: 90%;
+  top: 40%;
+}
+
+#img4 {
+  left: 50%;
+  top: 80%;
+  width: 31%;
+}
+
+#img4 .innerimg {
+  width: 90%;
+}
+
+#img4 .innerframe {
+  width: 100%;
+}
+
+#text1 {
+  top: 18%;
+}
+
+#text2 {
+  left: 37%;
+  top: 60%;
+}
+
+#text3 {
+  top: 85%;
+}
+
+#img7 {
+  top: 90%;
+  left: 10%;
+}
+
+#img5 {
+  top: 110%;
+  left: 12%;
+}
+
+#img6 {
+  top: 118%;
+  left: 28%;
+}
+
+#img8 {
+  top: 128%;
+  left: 20%;
+}
+
+#text4 {
+  top: 130%;
+  left: 42%;
+}
+
+#text5 {
+  left: 26%;
+  top: 160%;
+}
+
+#text6 {
+  top: 180%;
+  width: 18%;
+}
+
+#eisenstein {
+  top: 177%;
+  left: 25%;
+  width: 30%;
+}
+
+#reel {
+  left: 87%;
+  top: 72%;
+  width: 55%;
+  height: auto;
+}
+
+#reelroll {
+  width: 35%;
+  left: 114%;
+  top: 63%;
+  cursor: pointer;
+}
+
+@keyframes spin {
+  100% {transform: rotate(-360deg);}
+}
+
+.spin {
+  animation: spin 3s infinite linear;
+}
+
+#gif1 {
+  position: absolute;
+  left: 70%;
+  top: 177%;
+  height: auto;
+  width: 20%;
+  display: none;
+}
+
+#gif1 p {
+  max-width: 100%;
+  padding: 0;
+  font-size: .8em;
+}
+
+#text7 {
+  top: 230%;
+  left: 47%;
+}
+
+#benjamin {
+  top: 220%;
+  left: 75%;
+}
+
+#benjamin button {
+  position: absolute;
+  width: 30%;
+  left: 105%;
+  background-color: inherit;
+  font-family: neue-haas-unica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: .8em;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+#benjamin button:hover {
+  background-color: #ADE0EB;
+}
+
+#apipics {
+  position: absolute;
+  height: 20%;
+  width: 30%;
+  top: 235%;
+  left: 115%;
+}
+
+.apipic {
+  position: static;
+  width: auto;
+  height: 100%;
+  margin-right: 5%;
+}
+
+#text8 {
+  left: 75%;
+  top: 258%;
+}
+
+#const1 {
+  top: 270%;
+  left: 95%;
+}
+
+#const2 {
+  top: 260%;
+  left: 67%;
+}
+
+#const3 {
+  top: 270%;
+  left: 80%;
+}
+
+#text9 {
+  top: 250%;
+}
+
+#overviewvideos {
+  position: absolute;
+  width: 80%;
+  top: 300%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#overviewvideos video {
+  width: 80%;
+  height: auto;
+}
+
+#overviewvideos a {
+  display: block;
+  font-size: .8em;
+  color: black;
+  text-decoration: none;
+}
+
+#overviewvideos a:hover {
+  color: white;
+}
+
+#museumspace {
+  position: absolute;
+  top: 350%;
+  width: 70%;
+  height: 70%;
+  left: 15%;
+}
+
+#museumspace img {
+  width: 100%;
+  height: auto;
+  padding: 5% 0;
+}
+
+#museumspace p {
+  width: 15%;
+  cursor: pointer;
+}
+
+#museumspace p:hover {
+  color: white;
+}
+
+#space1 {
+  left: 34%;
+  top: 79%;
+}
+
+#space2 {
+  left: 71%;
+  top: 34%;
+}
+
+#space3 {
+  left: 60%;
+  top: 58%;
+}
+
+#space4 {
+  top: 50%;
+  left: 90%;
+}
+
+#conclusion {
+  position: absolute;
+  left: 95%;
+  top: 360%;
+  width: 50%;
+  height: 70%;
+}
+
+#conclusion p {
+  position: static;
+  max-width: 50%;
+}
+
+#conclusion img {
+  position: static;
+  width: 50%;
+  height: auto;
+}
+
+#conclusion div {
+  display: none;
+}
+
+#finalthoughts {
+  position: absolute;
+  top: 450%;
+  width: 100%;
+  height: auto;
+}
+
+#finalthoughts p {
+  max-width: 50%;
+  position: static;
+  text-align: center;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+#finalthoughts #finalimg {
+  position: static;
+  width: 60%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+#thenightwatch {
+  padding: 5% 0;
+  width: 100%;
+  height: auto;
+}
+
+#finalconstellation {
+  padding: 5% 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+}
+
+#finalconstellation:hover {
+  opacity: 100;
+  transition: 3s ease;
+}
+
+.icons {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 6%;
+  padding: .5%;
+  z-index: 2;
+}
+
+.iconimg {
+  position: relative;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.icons p {
+  line-height: 96%;
+  font-size: .8em;
+  max-width: 100%;
+  width: auto;
+  padding: 0;
+  position: static;
+}
+
+@media only screen and (max-width: 550px) {
+  p {
+    font-size: 2vw;
+  }
+
+  h1 {
+    font-size: 4vw;
+  }
+
+  .icons p {
+    font-size: 2vw;
+  }
+}
